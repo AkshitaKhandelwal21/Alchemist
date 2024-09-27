@@ -1,5 +1,4 @@
 import datetime
-# import sqlalchemy
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, TIMESTAMP, Float, VARCHAR, func, distinct
 from sqlalchemy.orm import sessionmaker, declarative_base, relationship
 from flask import Flask, request, jsonify, render_template
