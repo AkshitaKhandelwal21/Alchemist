@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>User Dashboard</title>
+    <style>
+        .chart-container {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body style="background-color: #e9e6ef; font-family: sans-serif; font-weight: bold;">
+
+    <h1 style="text-align:center; color:black; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">USER DASHBOARD</h1>
+    <br>
+
+    <div class="container" style="display:flex; justify-content:center; align-items: center; gap: 20px;">
+
+        <div class="card" style="width:250px; background-color:#755FEE; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+            <p style="font-weight: bold; color: white;">Number of Doctors</p>
+            <h2 style="font-weight: bold; color: white;">{{ num_doctors }}</h2>
+        </div>
+
+        <div class="card" style="width:250px; background-color: #FD4B6D; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+            <p style="font-weight: bold; color: white;">Number of Products</p>
+            <h2 style="font-weight: bold; color: white;">{{ num_products }}</h2>
+        </div>
+        <div class="card" style="width:250px; background-color: #FAB627; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+            <p style="font-weight: bold; color: white;">Total Sales</p>
+            <h2 style="font-weight: bold; color: white;">{{ avg_sales }} DH</h2>
+        </div>
+        <div class="card" style="width:250px; background-color: #02AD44; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+            <p style="font-weight: bold; color: white;">Average Profit</p>
+            <h2 style="font-weight: bold; color: white;">{{ avg_profit }}%</h2>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+
+    <div style="width: 600px; margin-left:20px; border-radius:25px; overflow:hidden; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+        {{ fig2 | safe }}
+    </div>
+    <div style="width: 700px; margin-right:20px; border-radius:25px; overflow:hidden; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+        {{ fig5 | safe }}
+    </div>
+</div>
+<br>
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div style="width: 600px; margin-left:20px; border-radius:25px; overflow:hidden; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+        {{ fig3 | safe }}
+        </div>
+        <div style="width: 700px; margin-right:20px; border-radius:25px; overflow:hidden; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+        {{ fig4 | safe }}
+        </div>
+    </div>
+
+    <br>
+
+    <div style="width:1200px; margin-left:90px; border-radius:25px; overflow:hidden; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+        {{ fig1 | safe }}
+    </div>
+
+</body>
+</html>
