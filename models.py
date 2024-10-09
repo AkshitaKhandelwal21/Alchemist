@@ -11,7 +11,6 @@ import plotly.graph_objects as go
 
 app = Flask(__name__)
 
-# engine = create_engine("mysql+pymysql://root:AKSHITA@localhost/Alchemist")
 engine = create_engine("sqlite:///database.db")
 Base = declarative_base()
 Session = sessionmaker(bind=engine)
