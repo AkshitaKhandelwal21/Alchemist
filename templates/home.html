@@ -17,26 +17,30 @@
     <h1 style="text-align:center; color:black; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">USER DASHBOARD</h1>
     <br>
 
-    <div class="container" style="display:flex; justify-content:center; align-items: center; gap: 20px;">
+    <div class="container" style="display:grid; grid-template-columns: repeat(4, minmax(0, 1fr)); justify-content:center; align-items: center; gap: 20px;">
 
-        <div class="card" style="width:250px; background-color:#755FEE; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+
+
+        <div class="card" style="width:250px; background-color:#755FEE; padding:10px; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
             <p style="font-weight: bold; color: white;">Number of Doctors</p>
-            <h2 style="font-weight: bold; color: white;">{{ num_doctors }}</h2>
+            <h2 style="font-weight: bold; color: white; margin:0px;">{{ num_doctors }}</h2>
         </div>
 
-        <div class="card" style="width:250px; background-color: #FD4B6D; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+
+
+        <div class="card" style="width:250px; padding:10px; background-color: #FD4B6D; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
             <p style="font-weight: bold; color: white;">Number of Products</p>
-            <h2 style="font-weight: bold; color: white;">{{ num_products }}</h2>
+            <h2 style="font-weight: bold; color: white; margin:0px;">{{ num_products }}</h2>
         </div>
-        <div class="card" style="width:250px; background-color: #FAB627; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+        <div class="card" style="width:250px; padding:10px; background-color: #FAB627; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
             <p style="font-weight: bold; color: white;">Total Sales</p>
-            <h2 style="font-weight: bold; color: white;">{{ avg_sales }} DH</h2>
+            <h2 style="font-weight: bold; color: white; margin:0px;">{{ avg_sales }} DH</h2>
         </div>
-        <div class="card" style="width:250px; background-color: #02AD44; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
+        <div class="card" style="width:250px; padding:10px; background-color: #02AD44; box-shadow: 5px 5px 10px 2px rgb(0 0 0 / .8);">
             <p style="font-weight: bold; color: white;">Average Profit</p>
-            <h2 style="font-weight: bold; color: white;">{{ avg_profit }}%</h2>
+            <h2 style="font-weight: bold; color: white; margin:0px;">{{ avg_profit }}%</h2>
         </div>
-    </div>
+    </div>
     <br>
     <br>
 
